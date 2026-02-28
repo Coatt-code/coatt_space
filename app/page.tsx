@@ -41,7 +41,7 @@ export default function Page() {
                 <div className="grid md:grid-cols-3 gap-4 md:gap-5">
                     <Item variant="outline">
                         <ItemMedia variant="icon">
-                            <Image src="/blitzcode.png" alt="blitzcode icon" width={100} height={100} className="overflow-hidden" ></Image>
+                            <Image src="/blitzcode.png" alt="blitzcode icon" width={100} height={100} className="rounded-sm" ></Image>
                         </ItemMedia>
                         <ItemContent>
                         <ItemTitle className="text-lg">Blitz Code</ItemTitle>
