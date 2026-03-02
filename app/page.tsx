@@ -14,11 +14,14 @@ import Link from "next/link"
 import { Skeleton } from "@/components/ui/skeleton"
 import { ButtonGroup } from "@/components/ui/button-group"
 import Image from "next/image"
+import { Badge } from "@/components/ui/badge"
+
 
 export default function Page() {
     return (
         <div className="h-dvh w-screen p-3 md:p-6 flex flex-col">
-            <div className="flex w-full max-w-sm flex-col">
+            
+            <div className="flex w-full max-w-sm flex-col mb-10">
             <Item variant="outline">
                 <ItemMedia>
                     <Avatar className="size-12 md:size-14 mb-1">
@@ -36,8 +39,19 @@ export default function Page() {
                 </ItemContent>
             </Item>
             </div>
+
+            <div className="px-1">
+                <h1 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0">
+                    Hello there!
+                </h1>
+                <p className="leading-7 [&:not(:first-child)]:mt-6">
+                    I'm a full-stack web developer who makes cool stuff in spare time.
+                </p>
+                <h4 className="scroll-m-20 text-xl font-semibold tracking-tight mt-10 mb-6">
+                    My projects
+                </h4>
+            </div>
             <div className="flex flex-1 flex-col">
-                <h1 className="text-center w-full my-6 md:mt-10 text-lg md:text-3xl">My Projects</h1>
                 <div className="grid md:grid-cols-3 gap-4 md:gap-5">
                     <Item variant="outline">
                         <ItemMedia variant="icon">
@@ -46,8 +60,10 @@ export default function Page() {
                         <ItemContent>
                         <ItemTitle className="text-lg">Blitz Code</ItemTitle>
                         <ItemDescription>
-                            Realtime 1v1 coding battles.
+                            Realtime 1v1 coding battles in Python
                         </ItemDescription>
+
+                        <Badge className="mt-2" variant='secondary'>In development</Badge>
                         <ButtonGroup className="mt-2">
                                 <Button variant="outline" size='sm' asChild>
                                     <Link href="https://github.com/Coatt-code/blitzcode">GitHub</Link>
@@ -62,15 +78,11 @@ export default function Page() {
                         <ItemMedia variant="icon">
                         </ItemMedia>
                         <ItemContent>
-                        <ItemTitle className="text-lg">Next project</ItemTitle>
+                        <ItemTitle className="text-lg">Next thing</ItemTitle>
                         <ItemDescription>
                             Coming soon...
                         </ItemDescription>
-                        <ButtonGroup className="mt-2">
-                                <Button variant="secondary" size='sm'>
-                                    ...
-                                </Button>
-                        </ButtonGroup>
+                        <div className="w-10 h-18"></div>
                         </ItemContent>
                     </Item>
                 </div>
