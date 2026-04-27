@@ -14,8 +14,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Coatt dot space",
-  description: "some stuff made by coatt",
+  title: "Coatt.space",
+  description: "Some stuff made by Coatt",
 };
 
 export default function RootLayout({
