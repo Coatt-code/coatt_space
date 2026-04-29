@@ -1,20 +1,7 @@
-import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { Button } from "@/components/ui/button"
-import {
-  Item,
-  ItemActions,
-  ItemContent,
-  ItemDescription,
-  ItemMedia,
-  ItemTitle,
-} from "@/components/ui/item"
-import { Plus, ArrowUpRightIcon } from "lucide-react"
-import { GithubIcon } from "@/components/icons/simple-icons-github"
+import { Item, ItemContent, ItemTitle } from "@/components/ui/item"
 import Link from "next/link"
-import { Skeleton } from "@/components/ui/skeleton"
-import { ButtonGroup } from "@/components/ui/button-group"
 import Image from "next/image"
-import { Badge } from "@/components/ui/badge"
 
 
 export default function Page() {
