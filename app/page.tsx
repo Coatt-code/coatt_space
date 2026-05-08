@@ -11,6 +11,8 @@ export default function Page() {
                 <span className="opacity-20">https://</span>
                 coatt.space
             </h1>
+            {/*
+
             <div className="mt-10">
                 <Item variant='outline' className="max-w-md">
                     <ItemContent>
@@ -30,6 +32,8 @@ export default function Page() {
                     </ItemContent>
                 </Item>
             </div>
+            */}
+
         </div>
     );
 }
